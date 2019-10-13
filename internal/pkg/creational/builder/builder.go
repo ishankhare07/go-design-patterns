@@ -98,3 +98,30 @@ func (b *BikeBuilder) SetStructure() BuildProcess {
 func (b *BikeBuilder) GetVehicle() VehicleProduct {
 	return b.v
 }
+
+// BusBuilder implements the BuildProcess
+// interface for a bus
+type BusBuilder struct {
+	v VehicleProduct
+}
+
+// SetWheels sets the number of wheels on the bus
+func (b *BusBuilder) SetWheels() BuildProcess {
+	panic("not implemented")
+}
+
+// SetSeats sets the number of seats on the bus
+func (b *BusBuilder) SetSeats() BuildProcess {
+	panic("not implemented")
+}
+
+// SetStructure sets the structure of the bus
+func (b *BusBuilder) SetStructure() BuildProcess {
+	panic("not implemented")
+}
+
+// GetVehicle returns the underlying VehicleProduct
+// for the bus
+func (b *BusBuilder) GetVehicle() VehicleProduct {
+	panic("not implemented")
+}
