@@ -8,4 +8,4 @@ all 24 GOF design patterns in go
 | [Builder](https://github.com/ishankhare07/go-design-patterns/tree/master/internal/pkg/creational/builder) | Reusing an algorithm to create many implementations of an interface | ✔ |
 | Factory Method | Delegating the creation of different types | ✘ |
 | Abstract factory | A factory of factories | ✘ |
-| Prototype design pattern | Prototype allows us to hide the complexity of making new instances from the client | ✘ |
+| Prototype | Prototype allows us to hide the complexity of making new instances from the client | ✘ |
