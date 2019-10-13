@@ -107,21 +107,24 @@ type BusBuilder struct {
 
 // SetWheels sets the number of wheels on the bus
 func (b *BusBuilder) SetWheels() BuildProcess {
-	panic("not implemented")
+	b.v.Wheels = 6
+	return b
 }
 
 // SetSeats sets the number of seats on the bus
 func (b *BusBuilder) SetSeats() BuildProcess {
-	panic("not implemented")
+	b.v.Seats = 40
+	return b
 }
 
 // SetStructure sets the structure of the bus
 func (b *BusBuilder) SetStructure() BuildProcess {
-	panic("not implemented")
+	b.v.Structure = "Bus"
+	return b
 }
 
 // GetVehicle returns the underlying VehicleProduct
 // for the bus
 func (b *BusBuilder) GetVehicle() VehicleProduct {
-	panic("not implemented")
+	return b.v
 }
