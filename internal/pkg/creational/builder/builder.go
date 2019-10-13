@@ -70,22 +70,31 @@ func (c *CarBuilder) GetVehicle() VehicleProduct {
 	return c.v
 }
 
+// BikeBuilder implemets the BuildProcess
+// interface for a Bike
 type BikeBuilder struct {
 	v VehicleProduct
 }
 
+// SetWheels sets the number of wheels for bike
 func (b *BikeBuilder) SetWheels() BuildProcess {
-	panic("not implemented")
+	b.v.Wheels = 2
+	return b
 }
 
+// SetSeats sets number of seats for a bike
 func (b *BikeBuilder) SetSeats() BuildProcess {
-	panic("not implemented")
+	b.v.Seats = 2
+	return b
 }
 
+// SetStructure sets the structure for a bike
 func (b *BikeBuilder) SetStructure() BuildProcess {
-	panic("not implemented")
+	b.v.Structure = "Bike"
+	return b
 }
 
-func (b *BikeBuilder) GetVehicle() BuildProcess {
-	panic("not implemented")
+// GetVehicle returns a VehicleProduct for a bike
+func (b *BikeBuilder) GetVehicle() VehicleProduct {
+	return b.v
 }
