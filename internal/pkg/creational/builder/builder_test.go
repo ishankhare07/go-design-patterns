@@ -41,3 +41,22 @@ func TestBuildingBike(t *testing.T) {
 		t.Errorf("Bike must have 2 seats. Got = %d", bike.Seats)
 	}
 }
+
+func TestBuildingBus(t *testing.T) {
+	manufacturingComplex := &ManufacturingDirector{}
+
+	manufacturingComplex.SetBuilder(&BusBuilder{})
+	bus := manufacturingComplex.Construct()
+
+	if bus.Wheels != 6 {
+		t.Errorf("Wheels in a bus must be 6. Got = %d", bus.Wheels)
+	}
+
+	if bus.Structure != "Bus" {
+		t.Errorf("A bus must have a 'Bus' structure. Got = %s", bus.Structure)
+	}
+
+	if bus.Seats != 40 {
+		t.Errorf("Bus must have 40 seats. Got = %d", bus.Seats)
+	}
+}
