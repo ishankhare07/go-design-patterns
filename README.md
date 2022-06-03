@@ -8,7 +8,7 @@ all 24 GOF design patterns in go
 | [Builder](https://github.com/ishankhare07/go-design-patterns/tree/master/internal/pkg/creational/builder)             | Reusing an algorithm to create many implementations of an interface                                                                               | ✔      |
 | [Factory Method](https://github.com/ishankhare07/go-design-patterns/tree/master/internal/pkg/creational/factory)      | Delegating the creation of different types                                                                                                        | ✔      |
 | [Abstract factory](https://github.com/ishankhare07/go-design-patterns/tree/master/internal/pkg/creational/absfactory) | A factory of factories                                                                                                                            | ✔      |
-| [Prototype](https://github.com/ishankhare07/go-design-patterns/tree/master/internal/pkg/creational/Prototype)         | Have an object or set of objects that is already created at compile time. Serves as default template and can be cloned as many times as required. | ✔      |
+| [Prototype](https://github.com/ishankhare07/go-design-patterns/tree/master/internal/pkg/creational/prototype)         | Have an object or set of objects that is already created at compile time. Serves as default template and can be cloned as many times as required. | ✔      |
 
 #### Structural Patterns
 | Name      | Purpose                                                                                                                   | Status |
